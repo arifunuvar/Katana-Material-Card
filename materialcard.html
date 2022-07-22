@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!---------------------Navigation Bar Start-------------------->
     <div id="app">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark" style="z-index: 99;">
             <div class="container-fluid justify-content-start"><a href="/"
@@ -91,26 +92,121 @@
             </div>
         </nav>
     </div>
+    <!---------------------Navigation Bar End---------------------->
 
 
-    
-    
+    <!--------------------Main Container Start--------------------->
+   <div class="container offset-0 bg-white">
 
-    <script type="module" src="/src/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+    <div class="row">
+        <div class="card">
+            <div class="card-body">
+            <div class="row">
+                <div class="col-lg-10">
+                     <p>Material</p>
+                     <p id="text"></p>
+                </div>
+                <div class="col-2 align-self-center d-flex justify-content-between">
+                    <p class="text-danger mt-2" style="font-size: 15px;"><b>Not Saved</b></p>
+                    <i class="fa-solid fa-print mt-2"></i>
+                    <div class="dropdown ms-lg-0 ms-sm-auto"> <button class="btn-2 btn border-0 " type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"><i
+                        class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+            </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="row d-flex justify-content-lg-start">
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="mb-0">Material Name</p>
+                    <input id="mName" type="text" placeholder="Type material name"
+                        class="form-control border-bottom rounded-0 shadow-none border-danger mb-4">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="mb-0">Category</p>
+                    <input id="ctgName" type="text" placeholder="Select or create category"
+                        class="form-control border-bottom rounded-0 shadow-none mb-4">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <p class="mb-0">Units of measure</p>
+                    <input id="msName" type="text"
+                        class="form-control border-bottom rounded-0 shadow-none mb-4">
+                </div>
+            </div>    
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="mb-0">Default Supplier</p>
+                    <input id="mName" type="text" placeholder="Select or create supplier"
+                        class="form-control border-bottom rounded-0 shadow-none mb-4">
+                </div>
+            </div>
+           <div class="row">
+            <div class="col-lg-12">
+                <abbr class="mb-0 border-bottom rounded-0 shadow-none"> Do you buy this item in a different unit of measure?</abbr>
+           
+            </div>
+           </div>     
+            
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+        <abbr class="mb-0 border-bottom rounded-0 shadow-none" >Does this material come in different colors, sizes or similar?</abbr> 
+          
+        </div>
+    </div>
+
+    <div>
+        <div class="row  mt-4">
+            <div class="col bg-secondary mt-5  mx-4">
+                <p id="Additionalinfo">Additional info</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mx-4 buton  border border-dark  ">
+                <a href=""><i class="fa-solid fa-bold p-2"></i></a>
+                <a href=""><i class="fa-solid fa-italic p-2"></i></a>
+                <a href=""><i class="fa-solid fa-underline p-2"></i></a>
+                <a href=""><i class="fa-solid fa-link p-2"></i></a>
+                <a href=""><i class="fa-solid fa-list-ol p-2"></i></a>
+                <a href=""><i class="fa-solid fa-list p-2"></i></a>
+            </div>
+        </div>
+        <div class="row mx-0">
+            <form action="">
+                <textarea class="w-100"></textarea>
+            </form>
+        </div>
+</div>
+        </div>
+      </div>
+    <!--------------------Main Container End--------------------->
 
 
 
 
 
 
+        <script type="module" src="/src/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
 
-    <script type="module" src="/src/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+        <script type="module" src="/src/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

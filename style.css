@@ -263,4 +263,14 @@ body {
 .btn-2:hover {
     background-color: rgb(241, 241, 241);
 }
+#main_bgcolor
+{
+  background: rgb(243, 243, 243);
+  border: none;
+}
+
+#Additionalinfo
+{
+  background-color: #2C2D31BF;
+}
 
