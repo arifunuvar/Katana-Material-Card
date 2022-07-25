@@ -271,12 +271,17 @@ body {
 
 #Additionalinfo
 {
-  background-color: #f4f4f4;;
+  background-color: #f4f4f4;
 }
 
 .input_outline input{
  outline: none;
 }
 .tables th{
-  background-color: #f4f4f4;;
+  background-color: #f4f4f4;
+}
+
+#infobg
+{
+  background-color: #CCD8EB;
 }
