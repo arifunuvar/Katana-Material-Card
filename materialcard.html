@@ -96,10 +96,9 @@
 
 
     <!--------------------Main Container Start--------------------->
-   <div class="container offset-0 bg-white">
-
-    <div class="row">
-        <div class="card">
+   <div class="container bg-white">
+    <div class="row mt-3">
+        <div class="card border-0">
             <div class="card-body">
             <div class="row">
                 <div class="col-lg-10">
@@ -122,22 +121,22 @@
         <div class="col-lg-6">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="mb-0">Material Name</p>
-                    <input id="mName" type="text" placeholder="Type material name"
-                        class="form-control border-bottom rounded-0 shadow-none border-danger mb-4">
+                    <p id="title-color" class="mb-0 ms-2">Material Name</p>
+                    <input id="mName" type="text" onfocus="change_color(this)" placeholder="Type material name"
+                        class="form-control border-bottom rounded-0 border-2 shadow-none border-danger mb-4">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="mb-0">Category</p>
+                    <p id="title-color" class="mb-0">Category</p>
                     <input id="ctgName" type="text" placeholder="Select or create category"
                         class="form-control border-bottom rounded-0 shadow-none mb-4">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4">
-                    <p class="mb-0">Units of measure</p>
-                    <input id="msName" type="text"
+                    <p id="title-color" class="mb-0">Units of measure</p>
+                    <input id="Msname" type="text"
                         class="form-control border-bottom rounded-0 shadow-none mb-4">
                 </div>
             </div>    
@@ -145,38 +144,69 @@
         <div class="col-lg-6">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="mb-0">Default Supplier</p>
-                    <input id="mName" type="text" placeholder="Select or create supplier"
+                    <p id="title-color" class="mb-0">Default Supplier</p>
+                    <input id="Dsname" type="text" placeholder="Select or create supplier"
                         class="form-control border-bottom rounded-0 shadow-none mb-4">
                 </div>
-            </div>
-           <div class="row">
-            <div class="col-lg-12">
-                <abbr class="mb-0 border-bottom rounded-0 shadow-none"> Do you buy this item in a different unit of measure?</abbr>
-           
-            </div>
-           </div>     
-            
+            </div>            
         </div>
     </div>
 
     <div class="row">
         <div class="col-lg-12">
-        <abbr class="mb-0 border-bottom rounded-0 shadow-none" >Does this material come in different colors, sizes or similar?</abbr> 
-          
+        <abbr class="mb-0 border-bottom rounded-0 shadow-none" >Does this material come in different colors, sizes or similar?</abbr>
+        <div class="d-grid">
+            <!-- Button trigger modal -->         
+                <button type="button" class="btn btn-white border-0 py-2 d-flex justify-content-lg-start" data-bs-toggle="modal" data-bs-target="#Variants">    
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                      Yes, this material has multiple variants 
+                  </label>
+              </div>
+                </button>
+                <!-- Modal -->
+<div class="modal fade" id="Variants" tabindex="-1" aria-labelledby="VariantsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"style="min-width: 760px; transform: translate(0px, 0px);">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="VariantsLabel">Material variant setup</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-3 d-flex justify-content-lg-start">
+                    <abbr class="border-bottom rounded-0 shadow-none" >Variant option</abbr>
+            </div>
+
+                <div class="col-lg-9">
+                 <abbr class="border-bottom rounded-0 shadow-none" >Option values, separated by commas</abbr>
+                </div>
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            </div>
         </div>
     </div>
 
     <div>
         <div class="row  mt-4">
-            <div class="col bg-secondary mt-5  mx-4">
-                <p id="Additionalinfo">Additional info</p>
+            <div id="Additionalinfo" class="col mt-5  mx-4 d-flex justify-content-start">
+                <p>Additional info</p>
+                <i class="fa-solid fa-circle-info mt-1 ms-2"></i>
             </div>
         </div>
         <div class="row">
-            <div class="col mx-4 buton  border border-dark  ">
-                <a href=""><i class="fa-solid fa-bold p-2"></i></a>
+            <div class="col mx-4 buton  border border-dark">
                 <a href=""><i class="fa-solid fa-italic p-2"></i></a>
+                <a href=""><i class="fa-solid fa-bold p-2"></i></a>
                 <a href=""><i class="fa-solid fa-underline p-2"></i></a>
                 <a href=""><i class="fa-solid fa-link p-2"></i></a>
                 <a href=""><i class="fa-solid fa-list-ol p-2"></i></a>
@@ -207,6 +237,22 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
             crossorigin="anonymous"></script>
+
+            <script>
+                     $(document).on('click', '#checkbox', function () {
+                console.log("Checkbox clicked");
+                let value = "";
+                if ($('#checkbox').is(':checked') == true) {
+                    value = $('#checkbox').attr('data-sid');
+                    console.log(value);
+                }             else if ($('#checkbox').is(':checked') == false) {
+                    // value = $('#checkbox').attr('value', 'false1').val();
+                    console.log("CAN'T SELECT CHECKBOX");
+                }
+
+            })
+            </script>
+         
 </body>
 
 </html>

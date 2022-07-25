@@ -271,6 +271,11 @@ body {
 
 #Additionalinfo
 {
-  background-color: #2C2D31BF;
+  background-color: #f4f4f4;;
+}
+
+input:focus
+{
+  background-color: blue;
 }
 
