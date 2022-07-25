@@ -136,7 +136,7 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <abbr class="mb-0 border-bottom rounded-0 shadow-none text-muted">Unit of measure</abbr>
-                                <input id="Msname" type="text"
+                            <input id="Msname" type="text"
                                 class="form-control border-bottom rounded-0 shadow-none mb-4 mt-0">
                         </div>
                     </div>
@@ -154,14 +154,14 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    <abbr class="mb-0 border-bottom rounded-0 shadow-none">Does this material come in different colors,
+                    <abbr class="mb-0 border-bottom rounded-0 shadow-none mb-2">Does this material come in different colors,
                         sizes or similar?</abbr>
                     <div class="d-grid">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-white border-0 py-2 d-flex justify-content-lg-start"
                             data-bs-toggle="modal" data-bs-target="#Variants">
 
-                            <div class="form-check">
+                            <div class="form-check mb-4 text-muted ">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                                 <label class="form-check-label" for="flexCheckChecked">
                                     Yes, this material has multiple variants
@@ -182,18 +182,22 @@
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="col-lg-12 d-flex justify-content-end mb-2">
-                                                <button type="button" class="btn btn-light"><i class="fa-solid fa-paste me-2"></i>Copy variant config from</button>
+                                                <button type="button" class="btn btn-light"><i
+                                                        class="fa-solid fa-paste me-2"></i>Copy variant config
+                                                    from</button>
 
                                             </div>
-                                      </div>
+                                        </div>
 
                                         <div class="row">
                                             <div class="col-lg-3 d-flex justify-content-lg-start">
-                                                <abbr class="border-bottom rounded-0 shadow-none text-muted">Variant option</abbr>
+                                                <abbr class="border-bottom rounded-0 shadow-none text-muted">Variant
+                                                    option</abbr>
                                             </div>
 
                                             <div class="col-lg-9">
-                                                <abbr class="border-bottom rounded-0 shadow-none text-muted">Option values,
+                                                <abbr class="border-bottom rounded-0 shadow-none text-muted">Option
+                                                    values,
                                                     separated by commas</abbr>
                                             </div>
                                         </div>
@@ -202,8 +206,8 @@
                                                 <input id="Egcolor" type="text" placeholder="E.g color"
                                                     class="form-control border-bottom rounded-0 shadow-none mb-4">
                                             </div>
-                                       
-                                       
+
+
                                             <div class="col-lg-9 d-flex justify-content-lg-start">
                                                 <input id="Egcolor" type="text" placeholder="E.g red, green, blue"
                                                     class="form-control border-bottom rounded-0 shadow-none mb-4">
@@ -211,96 +215,68 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-lg-12">
-                                            <i class="fa-solid fa-square-plus"></i>
+                                                <i class="fa-solid fa-square-plus"></i>
                                             </div>
                                         </div>
                                     </div>
-                                 <div class="row">
-                                    <div class="col-lg-12 d-flex justify-content-end">   
-                                        <button type="button" class="btn btn-light me-2 mb-2" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary mb-2 me-2">Generete material variants</button> 
+                                    <div class="row">
+                                        <div class="col-lg-12 d-flex justify-content-end">
+                                            <button type="button" class="btn btn-light me-2 mb-2"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary mb-2 me-2">Generete material
+                                                variants</button>
+                                        </div>
                                     </div>
-                                 </div>                         
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
                     <div class="row">
                         <table id="Variantinfo" class="table table-bordered tables">
                             <thead>
-                                <th class="p-2">Variant Code / SKU</th>
-                                <th class="p-2">Default Purchase Price</th>
-                                <th class="p-2"> in Stock</th>
+                                <th class="p-2 text-muted">Variant Code / SKU<i
+                                        class="fa-solid fa-circle-info text-muted ms-2 text-muted ms-2"></i></th>
+                                <th class="p-2 text-muted">Default Purchase Price<i
+                                        class="fa-solid fa-circle-info text-muted ms-2 text-muted ms-2"></i></th>
+                                <th class="p-2 text-muted"> in Stock<i class="fa-solid fa-circle-info text-muted ms-2 "></i></th>
                             </thead>
                             <tbody class="input_outline">
                                 <td class="p-3"><input type="text" class="w-100 border-0  "></td>
-                                <td class="p-3"><input type="text"  class="w-100  border-0 " ></td>
-                                <td class="p-3"><input type="text"  class="w-100  border-0 "></td>
+                                <td class="p-3"><input type="text" class="w-100  border-0 "></td>
+                                <td class="p-3"><input type="text" class="w-100  border-0 "></td>
                             </tbody>
                         </table>
                     </div>
-                  
-                
+
+
                     <div class="row  mt-4">
-                        <div id="Additionalinfo" class="col mt-5  mx-4 d-flex justify-content-start">
-                            <p>Additional info</p>
-                            <i class="fa-solid fa-circle-info mt-1 ms-2"></i>
+                        <div id="Additionalinfo" class="col mt-3 mx-3 d-flex justify-content-start">
+                            <p class="my-2 text-muted">Additional info</p>
+                            <i class="fa-solid fa-circle-info mt-2 ms-2 my-3 text-muted"></i>
+                        </div>
+                        <div> <textarea id="editor1" class="ck_editor" style="width: 100%;height:40px"
+                                placeholder="Type commet here"></textarea>
+                            </textarea>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col mx-4 buton  border border-dark">
-                            <a href=""><i class="fa-solid fa-italic p-2"></i></a>
-                            <a href=""><i class="fa-solid fa-bold p-2"></i></a>
-                            <a href=""><i class="fa-solid fa-underline p-2"></i></a>
-                            <a href=""><i class="fa-solid fa-link p-2"></i></a>
-                            <a href=""><i class="fa-solid fa-list-ol p-2"></i></a>
-                            <a href=""><i class="fa-solid fa-list p-2"></i></a>
-                        </div>
-                    </div>
-                    <div class="row mx-0">
-                        <form action="">
-                            <textarea class="w-100 d-flex justify-content-lg-start p-2" placeholder="Type comment here" style="font-style: italic ;"></textarea>
-                       </form>
-                   </div>
                 </div>
-              </div>
-        <!--------------------Main Container End--------------------->
+                <!--------------------Main Container End--------------------->
+                <script type="module" src="/src/main.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+                    crossorigin="anonymous"></script>
 
+                <script type="module" src="/src/main.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+                    crossorigin="anonymous"></script>
 
+                <script src="//cdn.ckeditor.com/4.19.1/basic/ckeditor.js"></script>
 
-
-
-
-        <script type="module" src="/src/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-            crossorigin="anonymous"></script>
-
-        <script type="module" src="/src/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-            crossorigin="anonymous"></script>
-
-        <script>
-            $(document).on('click', '#checkbox', function () {
-                console.log("Checkbox clicked");
-                let value = "";
-                if ($('#checkbox').is(':checked') == true) {
-                    value = $('#checkbox').attr('data-sid');
-                    console.log(value);
-                } else if ($('#checkbox').is(':checked') == false) {
-                    // value = $('#checkbox').attr('value', 'false1').val();
-                    console.log("CAN'T SELECT CHECKBOX");
-                }
-
-            })
-        </script>
-        <script>
-            function renk_degis(x) {
-              x.style.background = "blue";
-            }
-            </script>
+                <script>
+                    CKEDITOR.replace('editor1')
+                </script>
 
 </body>
 
