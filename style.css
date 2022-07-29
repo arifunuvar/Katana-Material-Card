@@ -285,3 +285,84 @@ body {
 {
   background-color: #CCD8EB;
 }
+
+
+
+.addmaterial
+{
+  opacity: 0.6;
+  transition: 0.3s;
+
+}
+
+.addmaterial:hover
+{
+  opacity: 0.6;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+
+.addmaterial1:hover
+{
+  border-bottom-color: rgb(0, 0, 0) !important;
+  transition: 0.3s;
+  opacity: 1;
+}
+.addmaterial1:focus
+{
+  opacity: 1.0;
+  transition: 0.9s;
+  border-bottom-color: #07429b !important;
+}
+
+
+.material-table:hover input
+{
+background-color: #e2edff;
+opacity:1.0 ;
+
+}
+
+.material-table td:hover
+{
+background-color: #e2edff;
+opacity:1.0 ;
+
+}
+.material-table .form-control:disabled
+{
+border: none;
+}
+.material-table .form-control:disabled:hover
+{
+background-color: #e2edff;
+}
+
+.material-table input:hover
+{
+background-color:#fff ;
+opacity:1.0 ;
+}
+  
+input[type=text]:focus
+{
+  border: 1px solid rgb(9, 51, 203) ;
+}
+
+
+.material-table1:hover
+{
+  border: 1px solid rgb(9, 51, 203) ;
+}
+
+.disabled
+{
+  background-color: #f4f4f4;
+}
+
+.form-control:disabled, .form-control[readonly]
+{
+  background-color: #fff;
+  opacity: 1;
+}
